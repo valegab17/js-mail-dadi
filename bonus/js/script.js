@@ -36,3 +36,24 @@ else if (primaParola.length > secondaParola.length){
 else{
     console.log(primaParola, secondaParola);
 }
+
+/* JSNACK 5 */
+
+//creo un array vuoto 
+
+const oddNum = [];
+
+//chiedo all'utente di inserire per 6 volte un numero 
+
+for(i = 0; i < 6; i++){
+    let addNumber = parseInt(prompt('Inserisci un numero . . . '));
+
+    //ora pusho solo i numeri dispari 
+
+if(addNumber % 2 !== 0){
+    oddNum.push(addNumber);
+}
+}
+
+//stampo i dispari
+console.log(oddNum);
